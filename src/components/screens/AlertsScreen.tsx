@@ -1,4 +1,3 @@
-
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
@@ -7,7 +6,6 @@ import {
   AlertTriangle, 
   Shield, 
   Heart, 
-  Mask,
   Wind,
   Clock,
   CheckCircle,
@@ -46,7 +44,7 @@ const AlertsScreen = () => {
 
   const healthTips = [
     {
-      icon: <Mask className="h-5 w-5 text-blue-500" />,
+      icon: <Shield className="h-5 w-5 text-blue-500" />,
       title: "Wear N95 Masks",
       description: "Use N95 or equivalent masks when outdoors during high pollution days.",
       category: "Protection"
@@ -173,7 +171,7 @@ const AlertsScreen = () => {
         <CardContent>
           <div className="space-y-2">
             <div className="flex items-center space-x-2 text-sm">
-              <Mask className="h-4 w-4 text-red-600" />
+              <Shield className="h-4 w-4 text-red-600" />
               <span className="text-red-700">Wear protective masks outdoors</span>
             </div>
             <div className="flex items-center space-x-2 text-sm">

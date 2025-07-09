@@ -1,7 +1,7 @@
 
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Heart, AlertTriangle, Shield, Mask, Home, Wind } from "lucide-react";
+import { Heart, AlertTriangle, Shield, Home, Wind } from "lucide-react";
 
 interface HealthAdvisoryCardProps {
   aqiLevel: string;
@@ -52,7 +52,7 @@ const HealthAdvisoryCard = ({ aqiLevel }: HealthAdvisoryCardProps) => {
       case "Unhealthy":
       default:
         return {
-          icon: <Mask className="h-5 w-5 text-red-500" />,
+          icon: <Shield className="h-5 w-5 text-red-500" />,
           title: "Avoid outdoor activities",
           recommendations: [
             "Everyone should avoid prolonged outdoor exposure",
